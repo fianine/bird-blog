@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-// Auth::routes();
+Auth::routes();
 
 Route::group(['before' =>  'auth', 'namespace' => 'Auth'], function(){
     Route::get('secret/login', 'LoginController@showLoginForm')->name('secret.login');
